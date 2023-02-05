@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Game</title>
+</head>
+<body>
+
+<h1>Guess the number</h1>
+<p>You need to find the hidden number between 1 and 100 in 10 guesses.</p>
+
+<p id="demo">&nbsp</p>
+<input id="gN" type="text"><br><br>
+<button onclick="checkNumber()">Click Me!</button>
+
+
+<script>
+let X= Math.floor(Math.random()*101);
+//alert(X);
+let Z = 10;
+function checkNumber(){
+Z = Z-1
+let Y = document.getElementById("gN").value;
+if (Z>0) {
+if (Y>X) {
+  document.getElementById("demo").innerHTML = "Too high";
+} else if (Y<X){
+  document.getElementById("demo").innerHTML = "Too low";
+} else {
+  document.getElementById("demo").innerHTML = "Spot on!";
+}
+} else {
+  alert ("Sorry, you lost!")
+}
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calculator</title>
+</head>
+<body>
+
+<h1>Simple Calculator</h1>
+
+<input id="no1" type="number"> &nbsp;&nbsp;
+<input id="no2"type="number"><hr>
+<button onclick="calculate('+')"> + </button><hr>
+<button onclick="calculate('-')"> - </button><hr>
+<button onclick="calculate('*')"> * </button><hr>
+<button onclick="calculate('/')"> / </button><hr>
+<input id="result" type="number">
+
+<script>
+    function calculate(operation) {
+    // take the first number
+    var x = Number(document.getElementById("no1").value);
+    // take the second number
+    var y = Number(document.getElementById("no2").value);
+    // create a variable that holds the result
+    //calculate the result depending on the value "operation" - the function argument
+    //use if, else if, else
+
+    if (operation=="+") {
+       z = x + y;
+    } else if(operation=="-"){
+      z = x - y;
+    } else if(operation=="*"){
+      z = x * y;
+    } else if(operation=="/"){
+      z = x / y;
+    }
+    // output the result in the third input box
+    document.getElementById("result").value = z;
+    }
+
+
+
+
+</script>
+
+</body>
+</html>
