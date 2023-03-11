@@ -42,7 +42,7 @@ body {
 /* Change color on hover */
 .sidenav a:hover {
   background-color: #ddd;
-  color: black;
+  color: #284564;
 }
 
 /* Style the content */
@@ -61,23 +61,30 @@ body {
   margin-right: auto;
 }
 
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-h2 {
+/*h2 {
   background-image: url("logo.png");
   background-size: cover;
   align: right;
+  padding: 0px;
   width: 100%;
   height: 120px;
-}
+} */
 
 @media only screen and (max-width: 600px) {
   /* For mobile phones: */
-  body {
-    background-size:300px;
-  }
-  .sidenav {
+  .sidenav a {
     width: 25%;
-    font-size: 10px;
+    font-size: 13px;
+  }
+  .sidenav a:hover {
+    width: 100%;
+    font-size: 15px;
   }
   .content {
     width: 75%;
@@ -101,6 +108,7 @@ td {
 <body>
 
   <div class="sidenav">
+    <img src="logo.png" style="width:55%;">
     <a title="Link"href="index.html"target="_self">Introduction</a>
     <a title="Link"href="Basic_info.html"target="_self">Information Sheet</a>
     <a title="Link"href="Schedule_councils.html"target="_self">The Program</a>
@@ -108,7 +116,7 @@ td {
   </div>
 
 <div class="content">
-  <h2 style="text-align:center; background-color: #3E663B;">Model European Council 2023</h2>
+  <h2 style="text-align:center;">Model European Council 2023</h2>
 
 	<h3 style="text-align:center;">The Program</h3>
 
@@ -220,6 +228,7 @@ td {
       <td>End of MEC</td>
     </tr>
   </table>
+  <br>
 </div>
 
 </body>
